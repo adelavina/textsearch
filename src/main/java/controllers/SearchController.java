@@ -34,7 +34,7 @@ public class SearchController {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SearchController.class);
-	//	ElasticSearch.BuildElasticSearch();
+		ElasticSearch.BuildElasticSearch();
 	}
 	
 }
