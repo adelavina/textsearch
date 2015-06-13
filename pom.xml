@@ -4,6 +4,11 @@
 	<groupId>com.globant</groupId>
 	<artifactId>textsearch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.4.RELEASE</version>
+	</parent>
 	<build>
 		<plugins>
 			<plugin>
@@ -11,7 +16,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>services.WebApp</mainClass>
+							<mainClass>controllers.SearchController</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
@@ -25,7 +30,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>1.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
